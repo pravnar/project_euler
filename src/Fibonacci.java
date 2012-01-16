@@ -12,7 +12,6 @@ public class Fibonacci {
 			i++;
 		}
 		System.out.println(sum);
-		
 	}
 	
 	public static long FibSequence(long num) {
@@ -21,9 +20,10 @@ public class Fibonacci {
 		long b= 2;
 		long t;	
 		
-		if (0<= num && num <=2) return num; 
+		if (num == 0 || num == 1) return num;
+		if (num == 2 || num == 3) return num-1;
 		
-		for (int i=3; i<num; i++) {
+		for (int i=4; i<num; i++) {
 			t= a;
 			a= b;
 			b+= t;
